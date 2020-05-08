@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Frank's Prework</title>
+</head>
+  <script>
+    //this function returns a calcualtion
+    function calculateFunction(){
+      //get values from first text box
+      //this codes looks at entire document and returns the value of the id that we specify
+      var a = document.getElementById("input1").value; 
+      
+      //get value from second text box
+      //reading this code backwards is helpful; we want to get the value from input 2 in this document
+      var b = document.getElementById("input2").value; 
+      
+      //add the two values
+      //always put semicolons after the script
+      var sum = parseFloat(a) + parseFloat(b); 
+      
+      //print the result to the page
+      document.write(sum);   
+      
+    }
+    
+  </script>
+<body>
+  <h1>VetsinTech Web Dev Pre-Work Task</h1>
+    <p>VetsinTech supports our current and returning veterans
+with re-integration services, and by connecting them to the national technology ecosystem. ViT
+is committed to bringing together a tech-specific network, resources, and programs for our
+veterans interested in Education, Entrepreneurship, and Employment - the 3E’s!
+    </p>
+  <h>Simple Calculator</h>
+  <p>Enter values in the text boxes and press the buttom to the see the result</p>
+  <input type="text" name="Input 1" id="input1" />
+  <p>+</p>
+  <input type="text" name="Input 2" id="input2"/>
+  <input type="submit" name="calculateButton" id="calculateButton" 
+ onClick="calculateFunction()" value="Calculate Now"/>
+
+  
+  </body>
+  
+</html>
